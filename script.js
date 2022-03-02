@@ -58,11 +58,33 @@ function countDown(number) {
   }
   document.write("<br>");
 }
-countDown(10);
-countDown(15);
+// countDown(10);
+// countDown(15);
+// countDown(prompt("Enter the number!", 100)); 
+
+// Math.random();    // функция которая создает рандом число
+
+// var number = Math.random();
+// document.write(number * 100);       // случайное число
 
 
+function randomColor() {
+  var red = Math.random() * 255; // 0-1 0.1 * 255 = 25.5
+  var blue = Math.random() * 255;
+  var green = Math.random() * 255;
+  return `rgb(` + red + `,` + green + `, ` + blue + `)`;
+}
+                                                           // рандомный цвет  текста
 
+function colorfulText(text, color) {
+  // var red = Math.random() * 255; // 0-1 0.1 * 255 = 25.5
+  // var blue = Math.random() * 255;
+  // var green = Math.random() * 255;
+  document.write(`<h1 style="color: ` + color +`;"> ` + text + `</h1>`);
+}
+var color = randomColor();
+colorfulText("Hllo world" , color);
+colorfulText("Bye world", color);
 
 
 // HW - создать 20 функций
